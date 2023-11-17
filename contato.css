@@ -1,0 +1,78 @@
+:root{
+    font-size: 62.5%;
+    --corprincipal: #3a68b7;
+}
+
+html{
+    background-color: var(--corprincipal);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    width: 90%;
+    min-width: 45rem;
+    max-width: 56rem;
+    background-color: #0e1010;
+    padding: 1.6rem;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label, input, textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea{
+    background-color: rgba(0, 0, 0, .3);
+    border: 2px solid transparent;
+    border-bottom-color: #bbb;
+    padding: 1rem;
+    margin: .5rem 0 2.5rem;
+    color: white;
+    outline: 0;
+}
+
+input:invalid:focus, textarea:invalid:focus{
+    border-bottom: 2px solid #ff000d;
+}
+
+input:valid:focus, textarea:valid:focus{
+    border-bottom: 2px solid #0ec72a;
+}
+
+input:focus, textarea:focus{
+    border-bottom: 2px solid #8e999a;
+    background-color: #2a2727;
+}
+
+legend{
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #8e999a;
+    font-size: 2.5rem;
+}
+
+.btn{
+    background-color: #2a2727;
+    color: white;
+    cursor: pointer;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    border: none;
+}
